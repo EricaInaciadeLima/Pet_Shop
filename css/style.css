@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600;700;800 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+section,
+footer {
+  padding: 54px 0;
+}
+
+h3 {
+  font-size: 50px;
+}
+p {
+  color: #000000df;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.btn {
+  background-color: #4f9cf9;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.1s;
+}
+.btn.animate-btn {
+  animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover {
+  background-color: #3580db;
+}
+/* @keyframes essa propriedade faz animação do botão  */
+@keyframes animate-outline {
+  from {
+    outline: 0px solid #4f9bf98a;
+  }
+  to {
+    outline: 15px solid #4f9bf900;
+  }
+}
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul a {
+  color: white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+}
+nav ul a:not(.btn)::after {
+  content: "";
+  background-color: #4f9cf9;
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+nav ul a:hover::after {
+  width: 100%;
+}
+
+nav a img{
+ margin:auto;
+  width: 50%;
+
+}
+/* menu-icon mobile */
+nav .menu-icon {
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  display: none;
+}
+nav .close-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  
+}
+/* end menu-icon mobile */
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner .banner-text {
+  margin: 120px;
+  text-align: center;
+  padding: 0 90px;
+}
+.banner .banner-text h1 {
+  font-size: 96px;
+  color:#032D54;
+}
+
+.banner .banner-text p {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+  margin: 18px 0;
+}
+
+/* faca mais */
+
+.conheca-pest .container {
+  display: flex;
+  align-items: center;
+}
+
+.conheca-pest .conheca-pest-text {
+  width: 50%;
+  padding: 0 40px;
+}
+.conheca-pest .conheca-pest-text h3 {
+  font-size: 56px;
+  
+}
+.s .faca-mais-text p {
+  margin: 10px 0 20px 0;
+}
+.conheca-pest .conheca-pest-img{
+  width: 50%;
+}
+.conheca-pest .conheca-pest-img img {
+  width: 100%;
+}
+
+.conheca-pest .pets {
+  width: 50%;
+  display: flex;
+
+}
+.conheca-pest .pets img {
+  width: 100%;
+  margin: 10px;
+}
+
+.conheca-pest a{
+  width: 20%;
+  margin-top: 40px;
+}
+/* Depoimentos */
+
+.depoimentos h3 {
+  text-align: center;
+  
+}
+.depoimentos p {
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+.depoimentos .card-item {
+  background-color: #d3e6fd;
+  margin: 15px;
+  border-radius: 14px;
+  text-align: center;
+  width: 350px;
+  transition: 0.3s;
+}
+
+.depoimentos .card-item img {
+  border-radius: 100%;
+  width: 80px;
+  display: block;
+  margin: 10px auto;
+}
+
+.depoimentos .card-item .nome-user {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+.depoimentos .card-item .depoimentos-user {
+  font-size: 15px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+.depoimentos .card-item .estrelas {
+  margin: 15px 0;
+  border-top: 2px solid #71767a23;
+  transition: 0.3s;
+}
+.depoimentos .card-item .estrelas i {
+  color: #4f9cf9;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.depoimentos .card-item:hover {
+  background-color: #4f9cf9;
+  margin-top: -5px;
+}
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimentos-user,
+.depoimentos .card-item:hover .estrelas i {
+  color: white;
+}
+
+
+/* footer */
+
+.footer {
+  background-color: #4f9cf9;
+  text-align: center;
+}
+
+.footer i {
+  color: #4f9cf9;
+  font-size: 19px;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+}
+.footer p {
+  margin: 10px;
+  color: white;
+}
+
+/* @media essa propriedade adaptar a tela para que o nav fique em  modo de menu. Dê acordo com determinado tamanho da tela.*/
+@media (max-width: 830px) {
+  /* menu mobile */
+  /* a partir daqui começa usar javascript */
+  .ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #184b88;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(0% at 100% 0);
+    transition: 0.7s;
+  }
+  .ul.open {
+    clip-path: circle(141.4% at 100% 0);
+  }
+
+
+  /* End página sobre */
+  /* end menu mobile */
+  .ul a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav .close-icon {
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 28px;
+  }
+}
+
+/* Página Loja */
+.loja {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+.loja .card {
+  max-width: 200px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.loja .card h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.loja .card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.loja .card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.loja .card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+
+/* End Página Loja */
+
+/* Agendar */
+.formulario{ 
+  max-width:600px; 
+  height:auto; 
+  float:none; 
+  margin:auto; 
+  padding:1em; 
+  margin-bottom:1em; 
+  border-radius:6px; 
+  background:#fff; 
+  box-shadow: 1px 0px 1.2px 0px #ccc; 
+  position:relative; 
+}
+.formulario:before { 
+  width:0; 
+  height:0; 
+  border:15px solid transparent; 
+  border-bottom-color:#fff; 
+  content:""; 
+  position:absolute; 
+  left:6%; 
+  top:-4.5%; 
+  margin-top:-4px; 
+  margin-left:6px; 
+  z-index:2;
+}
+.formulario label  { 
+  float:left; 
+  width:100%; 
+  margin-bottom:1.2em; 
+}
+.formulario label span {
+  width: 100%;
+  float: left;
+  color: #999;
+  margin-bottom: 6px;
+  font-family:'open_sansregular'; 
+}
+.formulario label input  { 
+  font-size:1em; 
+  color:#555; 
+  font-family:'open_sansregular'; 
+  outline:none; 
+  border:1px #dee5ed solid; 
+  border-radius:4px; 
+  padding:0.6em; 
+  transition: 0.3s;  
+}
+.formulario label select { 
+  font-size:1em; 
+  color:#555; 
+  border:1px #dee5ed solid; 
+  border-radius:4px; 
+  padding:0.6em; 
+  outline:none; 
+  transition: 0.3s;  
+}
+.formulario label textarea { 
+  font-size:1em; 
+  color:#555; 
+  border:1px #dee5ed solid; 
+  border-radius:4px; 
+  padding:0.6em; 
+  outline:none;
+  transition: 0.3s;   
+}
+.formulario label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formulario label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
+.formulario label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formulario button.btn-envia { 
+  background-color:rgb(37,174,230); 
+  width:100%; display:block; 
+  margin:auto; cursor:pointer; 
+  border-radius:4px;  
+  border:0; 
+  padding:0.8em 0em; 
+  color:#fff; 
+  font-size:1.3em; 
+  font-family:'open_sansbold'; 
+  text-align: center;
+  transition: 0.3s;   
+}
+.formulario button.btn-envia:hover { 
+  background-color:#333; 
+}
+
+.agendar h3{
+  margin-left: 500px;
+  margin-bottom: 10px;
+}
+
+/* End Agendar */
+
+/* Contato */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color:  #184b88;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #184a88bd;
+}
+/* End Con */

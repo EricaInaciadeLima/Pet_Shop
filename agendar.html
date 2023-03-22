@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para o css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Agendar</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header style="background-image: url('img/agendar.png')">
+      <!-- container -->
+      <div class="container">
+        <nav>
+          <a href="index.html">
+            <img src="img/petLove.png" alt="Logo" />
+          </a>
+          <ul class="ul">
+            <a href="index.html">Home</a>
+            <a href="loja.html">Loja</a>
+            <a href="agendar.html">Agendar</a>
+            <a href="adocao.html">Adoção</a>
+            <a class="btn" href="contato.html">Contato</a>
+            <div class="close-icon" onclick="closeMenu()">
+              <i class="fa fa-times-circle"></i>
+            </div>
+          </ul>
+          <div class="menu-icon" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
+        </nav>
+        <section class="banner">
+          <div class="banner-text">
+            <h1>Loja</h1>
+          </div>
+        </section>
+      </div>
+      <!-- end container -->
+    </header>
+    <!-- end header -->
+
+    <section class="agendar">
+      <h3>Agendamento</h3>
+      <div class="formulario">
+        <form action="processamento.js" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required /><br /><br />
+
+          <label for="telefone">Telefone:</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          /><br /><br />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="pet">Nome do Pet:</label>
+          <input type="text" id="pet" name="pet" required /><br /><br />
+
+          <label for="data">Data:</label>
+          <input type="date" id="data" name="data" required /><br /><br />
+
+          <label for="horario">Horário:</label>
+          <input type="time" id="horario" name="horario" required /><br /><br />
+
+          <label for="servico">Serviço:</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="Banho e tosa">Banho e tosa</option>
+            <option value="Vacinação">Vacinação</option>
+            <option value="Consulta veterinária">Consulta veterinária</option>
+            <option value="Hospedagem">Hospedagem</option></select
+          ><br /><br />
+
+          <label for="observacao">Observações:</label>
+          <textarea id="observacao" name="observacao"></textarea><br /><br />
+
+          <input type="submit" value="Agendar" />
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="links">
+          <a href="https://github.com/EricaInaciadeLima"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/erica-inacia-de-lima-82b7b7206/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <p>&copy;Desenvolvido por Erica Inacia em 2023</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- script está conectando o arquivo js com arquivo html. -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para o css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pet Love</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header style="background-image: url('img/filhotes.png')">
+      <!-- container -->
+      <div class="container">
+        <nav>
+          <a href="index.html">
+            <img src="img/petLove.png" alt="Logo" />
+          </a>
+          <ul class="ul">
+            <a href="index.html">Home</a>
+            <a href="loja.html">Loja</a>
+            <a href="agendar.html">Agendar</a>
+            <a href="adocao.html">Adoção</a>
+            <a class="btn" href="contato.html">Contato</a>
+            <div class="close-icon" onclick="closeMenu()">
+              <i class="fa fa-times-circle"></i>
+            </div>
+          </ul>
+          <div class="menu-icon" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
+        </nav>
+        <section class="banner">
+          <div class="banner-text">
+            <h1>Pet Love</h1>
+            <p>
+              Bem-vindo ao nosso petshop, onde cuidar do seu animal de estimação
+              é a nossa paixão! Oferecemos uma ampla variedade de produtos e
+              serviços para atender às necessidades do seu pet. Nossa equipe de
+              profissionais qualificados está sempre pronta para ajudá-lo a
+              fazer a escolha certa para o bem-estar do seu animal de estimação.
+              Estamos ansiosos para ajudá-lo a cuidar do seu amado pet!
+            </p>
+            <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+          </div>
+        </section>
+      </div>
+      <!-- end container -->
+    </header>
+    <!-- end header -->
+    <!-- faca mais -->
+    <section class="conheca-pest">
+      <!-- container -->
+      <div class="container">
+        <div class="conheca-pest-text">
+          <h3>Conheça seu pet!</h3>
+          <div class="pets">
+            <img src="/img/dog1.jpg" alt="Cachorro" />
+            <img src="/img/dog2.jpg" alt="Cachorro" />
+            <img src="/img/dog1.jpg" alt="Cachorro" />
+            <img src="/img/dog2.jpg" alt="Cachorro" />
+          </div>
+          <div class="pets">
+            <img src="/img/cat1.jpg" alt="Gato" />
+            <img src="/img/cat2.jpg" alt="Gato" />
+            <img src="/img/cat1.jpg" alt="Gato" />
+            <img src="/img/cat2.jpg" alt="Gato" />
+          </div>
+
+          <a href="adocao.html" class="btn animate-btn">Adoção</a>
+        </div>
+        <!-- <div class="conheca-pest-img">
+          <img src="img/desenho_dog.png" alt="Imagem" />
+        </div> -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end faca mais  -->
+
+    <!-- depoimentos -->
+    <section class="depoimentos">
+      <div class="container">
+        <h3>Nossa Equipe</h3>
+        <p>
+          Nossa equipe de profissionais qualificados está sempre pronta para
+          ajudá-lo a fazer a escolha certa para o bem-estar do seu animal de
+          estimação.
+        </p>
+        <div class="cards">
+          <!-- card item 1 -->
+          <div class="card-item">
+            <img src="img/funcionario2.jpg" alt="Foto " />
+            <p class="nome-user">Marina Lima</p>
+            <p class="depoimentos-user">
+              Somos especialistas em cuidados de higiene e beleza para animais
+              de estimação e estamos ansiosos para atender você e seu peludo.
+            </p>
+            <div class="estrelas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- end card item 1 -->
+          <!-- card item 2 -->
+          <div class="card-item">
+            <img src="img/veterinaria.jpg" alt="Foto" />
+            <p class="nome-user">Evelin Inacia</p>
+            <p class="depoimentos-user">
+              Estamos dedicados a fornecer os melhores cuidados de saúde para
+              animais de estimação.Nossa equipe de veterinários altamente
+              qualificados e experientes estão prontos para fornecer os cuidados
+              de saúde mais avançados para cães, gatos, pássaros, peixes,
+              répteis e pequenos animais.
+            </p>
+            <div class="estrelas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- end card item 2 -->
+          <!-- card item 3-->
+          <div class="card-item">
+            <img src="img/funcionario1.jpg" alt="Foto" />
+            <p class="nome-user">Herry Jones</p>
+            <p class="depoimentos-user">
+              Aqui você encontrará tudo o que precisa para cuidar do seu animal
+              de estimação. Oferecemos uma ampla seleção de produtos de alta
+              qualidade para cães, gatos, pássaros, peixes, répteis e pequenos
+              animais.
+            </p>
+            <div class="estrelas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- end card item 3 -->
+        </div>
+      </div>
+    </section>
+    <!-- end depoimentos -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="links">
+          <a href="https://github.com/EricaInaciadeLima"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/erica-inacia-de-lima-82b7b7206/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <p>&copy;Desenvolvido por Erica Inacia em 2023</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- script está conectando o arquivo js com arquivo html. -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
